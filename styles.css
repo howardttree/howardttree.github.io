@@ -167,12 +167,18 @@ h1 span {
 }
 
 .hero-image {
-  height: min(1120px, calc(100svh - 96px));
+  display: flex;
+  justify-content: center;
+  height: auto;
   margin-bottom: clamp(18px, 3vw, 48px);
+  background: #f4f3ef;
 }
 
 .hero-image img {
-  object-position: center 18%;
+  width: min(100%, 814px);
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
 }
 
 .image-grid {
