@@ -168,8 +168,9 @@ h1 span {
 
 .hero-image {
   display: flex;
+  align-items: center;
   justify-content: center;
-  height: auto;
+  min-height: min(1120px, calc(100svh - 96px));
   margin-bottom: clamp(18px, 3vw, 48px);
   background: #f4f3ef;
 }
@@ -177,6 +178,7 @@ h1 span {
 .hero-image img {
   width: min(100%, 814px);
   height: auto;
+  max-height: calc(100svh - 96px);
   object-fit: contain;
   object-position: center center;
 }
@@ -235,8 +237,12 @@ h1 span {
   }
 
   .hero-image {
-    height: auto;
-    aspect-ratio: 3 / 4;
+    min-height: calc(100svh - 36px);
+    aspect-ratio: auto;
+  }
+
+  .hero-image img {
+    max-height: calc(100svh - 36px);
   }
 
   .image-grid {
